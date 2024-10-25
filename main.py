@@ -7,8 +7,8 @@ app = Flask(__name__)
 @app.get("/")
 def index():
     context = {
-        "question": "Яка мова програмування тобі найбільше подобається?",
-        "answers": ["Python", "JS", "Java", "C++", "C#", "Basic"]
+        "question": "Яка піца тобі найбільше подобається?",
+        "answers": ["Піца чотири м'яса", "Гавайська піца"]
     }
     return render_template("index.html", **context)
 
